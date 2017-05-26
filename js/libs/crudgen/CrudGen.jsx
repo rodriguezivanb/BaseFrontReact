@@ -108,7 +108,8 @@ class CrudGenerator extends Component {
                                                                         style={styles.form_modal_input_text}
                                                                         type="number"
                                                                         placeholder={j.text}
-                                                                        name={j.name} />
+                                                                        name={j.name} 
+                                                                        step="0.01"/>
                                                                 </div>
                                                                 <br/><br/>
                                                             </div>
@@ -293,6 +294,7 @@ class CrudGenerator extends Component {
                                                                                         placeholder={j.text}
                                                                                         defaultValue={i[j.name]}
                                                                                         name={j.name} 
+                                                                                        step="0.01"
                                                                                         required/>
                                                                                 </div>
                                                                                 <br/><br/>
