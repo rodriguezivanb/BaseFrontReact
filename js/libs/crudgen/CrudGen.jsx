@@ -52,12 +52,12 @@ class CrudGenerator extends Component {
         try{
             return (
                 <div id="CrudGen"style={styles.div}>
-                    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" /> 
+                    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" /> 
                     <style>
                         {'#CrudGen label{font-size:14px;font-weight:bold}'}
                         {'#CrudGenTab{border-collapse: collapse;text-align:center}'}
                         {'#CrudGenTab thead tr td{border:1px solid gray;background:#CCC;height:30px}'}
-                        {'#CrudGenTab tbody tr td{padding:10px 0 10px 0}'}
+                        {'#CrudGenTab tbody tr td{padding:10px 0 10px 0; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}'}
                         {'#CrudGenTab tbody tr:nth-child(even){background:#EEE}'}
                     </style>
                     <h2>{this.props.config.name}</h2>
@@ -440,10 +440,11 @@ class CrudGenerator extends Component {
 
 const styles = {
     div:{
-        fontFamily: "'Dosis', sans-serif"
+        fontFamily: "'Quicksand', sans-serif"
     },
     table:{
-        width: "100%"
+        width: "100%",
+        tableLayout: "fixed"
     },
     table_edit:{
         color: "blue",
@@ -533,8 +534,7 @@ const styles = {
         border: "none",
         cursor: "pointer",
         fontSize: "15px",
-        fontFamily: "'Dosis', sans-serif",
-        fontWeight: "bold"
+        fontFamily: "'Quicksand', sans-serif",
     },
     form_modal_primary:{
         background:"#618793",
@@ -544,11 +544,11 @@ const styles = {
         border: "none",
         cursor: "pointer",
         fontSize: "15px",
-        fontFamily: "'Dosis', sans-serif",        
-        fontWeight: "bold"
+        fontFamily: "'Quicksand', sans-serif",        
     },
     form_modal_cancel:{
         background:"#c0392b",
+        fontFamily: "'Quicksand', sans-serif",        
         color: "white",
         height: "30px",
         lineHeight: "30px",
@@ -558,7 +558,6 @@ const styles = {
         cursor: "pointer",
         display: "inline-block",
         fontSize: "15px",
-        fontWeight: "bold"
     },
     icon_input:{
         height: "30px",
